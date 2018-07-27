@@ -1,0 +1,49 @@
+use_frameworks!
+
+# All tests need access to the Private headers of MetaWear
+abstract_target 'MetaWear' do
+    pod 'MetaWearPrivate', :path => '../'
+    
+    abstract_target 'MetaWear-iOS' do
+        platform :ios, '8.0'
+        
+        target 'MetaWearIntegrationTestHost-iOS' do
+            target 'MetaWearIntegrationTests-iOS' do
+                inherit! :search_paths
+            
+                pod 'iOSDFULibrary'
+            end
+        end
+        
+        target 'MetaWearUnitTests-iOS' do
+        end
+    end
+    
+    abstract_target 'MetaWear-macOS' do
+        platform :osx, '10.11'
+        
+        target 'MetaWearIntegrationTestHost-macOS' do
+            target 'MetaWearIntegrationTests-macOS' do
+                inherit! :search_paths
+                
+                pod 'iOSDFULibrary'
+            end
+        end
+        
+        target 'MetaWearUnitTests-macOS' do
+        end
+    end
+    
+    abstract_target 'MetaWear-tvOS' do
+        platform :tvos, '10.0'
+
+        target 'MetaWearIntegrationTestHost-tvOS' do
+            target 'MetaWearIntegrationTests-tvOS' do
+                inherit! :search_paths
+            end
+        end
+    
+        target 'MetaWearUnitTests-tvOS' do
+        end
+    end
+end

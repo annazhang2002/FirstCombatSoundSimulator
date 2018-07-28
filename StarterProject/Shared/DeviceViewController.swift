@@ -12,9 +12,6 @@ import AVFoundation
 
 class DeviceViewController: UIViewController {
     
-    @IBOutlet weak var deviceStatus: UILabel!
-    @IBOutlet weak var headView: headViewController!
-    
     let PI : Double = 3.14159265359
     
     var device: MBLMetaWear!
@@ -48,21 +45,16 @@ class DeviceViewController: UIViewController {
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        OperationQueue.main.addOperation {
+        /*OperationQueue.main.addOperation {
             switch (self.device.state) {
             case .connected:
-                self.deviceStatus.text = "Connected";
                 self.device.sensorFusion?.mode = MBLSensorFusionMode.imuPlus
             case .connecting:
-                self.deviceStatus.text = "Connecting";
             case .disconnected:
-                self.deviceStatus.text = "Disconnected";
             case .disconnecting:
-                self.deviceStatus.text = "Disconnecting";
             case .discovery:
-                self.deviceStatus.text = "Discovery";
             }
-        }
+        }*/
     }
     
     func getFusionValues(obj: MBLEulerAngleData){
@@ -74,7 +66,6 @@ class DeviceViewController: UIViewController {
         let x = radians((obj.p * -1) + 90)
         let y = radians(abs(365 - obj.y))
         let z = radians(obj.r)
-        headView.setPointerPosition(w: 0.0, x : x, y: y, z: z)
         playSoundsController.updateAngularOrientation(abs(Float(365 - obj.y)))
         
         // Send OSC here

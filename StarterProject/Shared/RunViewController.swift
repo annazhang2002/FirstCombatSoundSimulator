@@ -11,15 +11,15 @@ import AVFoundation
 import MetaWear
 class RunViewController: UIViewController, SendScenarioDelegate {
     
-    var scene: Int?
+    var scenario: Int = 0
     var soundArray : [String] = []
     
     
     var optionsViewController: OptionsViewController?
     
     func sendScenario(scene: Int) {
-        self.scene = scene
-        print("Scenario: " + String(scene))
+        self.scenario = scene
+        print("Scenario: " + String(scenario))
     }
     
     var playSoundsController: PlaySoundsController? = nil
@@ -29,13 +29,6 @@ class RunViewController: UIViewController, SendScenarioDelegate {
     let PI : Double = 3.14159265359
     
     var device: MBLMetaWear!
-    
-    
-    func data (p: Float, y : Float, r: Float) {
-        print("p: " + String(p))
-        
-    }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
@@ -134,7 +127,7 @@ class RunViewController: UIViewController, SendScenarioDelegate {
             playSoundsController?.play(index: sound.offset)
         }
         */
-        playSoundsController?.play(index: 11)
+        playSoundsController?.play(index: 0)
     }
     
     @IBAction func stopPressed(_ sender: UIButton) {
@@ -158,11 +151,11 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         /* sounds
          * 0.wav : AK47
          * 1.wav : Explosion 2
-         * 2.wav : Explosion
+         * 2.wav : Explosion 1
          * 3.wav : Grenade Launcher
          * 4.wav : Helicopter 2
          * 5.wav : Helicopter Flyby
-         * 6.wav : Helicopter
+         * 6.wav : Helicopter 1
          * 7.wav : Machine Gun 1
          * 8.wav : Machine Gun 2
          * 9.wav : Machine Gun 3
@@ -173,24 +166,58 @@ class RunViewController: UIViewController, SendScenarioDelegate {
          * 14.wav : Tank
          */
         
-        
-        for index in 0...14 {
-            soundArray.append(String(index) + ".wav")
+        //adds the sounds to the array and updates positions
+        switch (scenario) {
+        case 1:
+            //adds the sounds to the array
+            soundArray.append("0.wav")
+            soundArray.append("2.wav")
+            soundArray.append("6.wav")
+            soundArray.append("8.wav")
+            soundArray.append("13.wav")
+            soundArray.append("14.wav")
+
+        case 2:
+            //adds the sounds to the array
+            soundArray.append("11.wav")
+            
+        case 3:
+            //adds the sounds to the array
+            soundArray.append("11.wav")
+        default:
+            print("Scenario not found")
         }
         
+        soundArray.append("11.wav")
         
         //initializing the player with the soundArray files
         playSoundsController = PlaySoundsController(files: soundArray)
         
-        //put the sounds into specific positions
-        playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 50, y: 50, z: 0))
-        //playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 0, y: 0, z: 0))
-        //playSoundsController?.updateVolume(index: 11, volume: 0.2)
+        //updates the position of the sound based on the scenario
+        switch (scenario){
+        case 1:
+            playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 5))
+            
+        case 2:
+            playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
+            
+        case 3:
+            playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
+            
+        default:
+            print("Scenario not found")
+        }
         
-    }
-    
-    func sendScenario(scenario: Int) {
-        print(scenario)
+        
+        //has the overall battle sound always play quietly in each scenario
+        playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 0, y: 0, z: 0))
+        playSoundsController?.updateVolume(index: 11, volume: 0.2)
+        
+        /*
+         for index in 0...14 {
+         soundArray.append(String(index) + ".wav")
+         }
+         */
     }
     
 }

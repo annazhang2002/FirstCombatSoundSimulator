@@ -52,7 +52,7 @@ class PlaySoundsController {
             fileName = (fileName.padding(toLength: (fileExtensionCount-1), withPad: index, startingAt: 0))
             print(fileName)
             print(fileExtension)
-            guard let filePath = Bundle.main.url(forResource: fileName, withExtension: fileExtension, subdirectory: "Sounds")
+            guard let filePath = Bundle.main.url(forResource: fileName, withExtension: fileExtension)
                 
                 else {
                     print("Cannot find file")

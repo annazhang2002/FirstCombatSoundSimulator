@@ -16,7 +16,7 @@ class DeviceViewController: UIViewController {
         if let optionsViewController = segue.destination as?
             OptionsViewController {
             print("Preparing for OptionsViewController")
-            //optionsViewController.device = self.device
+            optionsViewController.device = self.device
         }
     }
     

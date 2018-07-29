@@ -188,10 +188,14 @@ class RunViewController: UIViewController, SendScenarioDelegate {
             print("Scenario not found")
         }
         
+        print("Sounds are in array")
+        
         soundArray.append("11.wav")
         
         //initializing the player with the soundArray files
         playSoundsController = PlaySoundsController(files: soundArray)
+        
+        print("sounds loaded")
         
         //updates the position of the sound based on the scenario
         switch (scenario){
@@ -207,11 +211,12 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         default:
             print("Scenario not found")
         }
+        print("sound positions updated")
         
         
         //has the overall battle sound always play quietly in each scenario
-        playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 0, y: 0, z: 0))
-        playSoundsController?.updateVolume(index: 11, volume: 0.2)
+        //playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 0, y: 0, z: 0))
+        //playSoundsController?.updateVolume(index: 11, volume: 0.2)
         
         /*
          for index in 0...14 {

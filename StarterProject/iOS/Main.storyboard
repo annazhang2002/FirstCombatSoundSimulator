@@ -220,7 +220,7 @@
         <!--Device-->
         <scene sceneID="RDV-ps-hQO">
             <objects>
-                <viewController id="XFA-76-WTO" customClass="DeviceViewController" customModule="StarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XFA-76-WTO" customClass="RunViewController" customModule="StarterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HeQ-IP-C5H"/>
                         <viewControllerLayoutGuide type="bottom" id="lSt-61-UdU"/>
@@ -235,7 +235,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Begin Simulation"/>
                                 <connections>
-                                    <segue destination="OWh-QH-0Dy" kind="push" id="5Fb-yg-7uU"/>
+                                    <segue destination="OWh-QH-0Dy" kind="push" id="J3W-SQ-kKp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVx-Qp-Ebj">

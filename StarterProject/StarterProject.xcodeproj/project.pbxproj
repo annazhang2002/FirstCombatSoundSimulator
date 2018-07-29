@@ -425,7 +425,7 @@
 		};
 		5D83398C0851483637B414DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -433,7 +433,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Starter-iOS/Pods-Starter-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;

@@ -129,10 +129,12 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         }
         
         //plays the sounds in the array
+        /*
         for sound in soundArray.enumerated() {
             playSoundsController?.play(index: sound.offset)
         }
-        
+        */
+        playSoundsController?.play(index: 11)
     }
     
     @IBAction func stopPressed(_ sender: UIButton) {
@@ -165,7 +167,7 @@ class RunViewController: UIViewController, SendScenarioDelegate {
          * 8.wav : Machine Gun 2
          * 9.wav : Machine Gun 3
          * 10.wav : Machine Gun 4
-         * 11.wav : Overal Battle
+         * 11.wav : Overal Battle ------ place at the origin in each scenario
          * 12.wav : Shotgun
          * 13.wav : Sniper Rifle
          * 14.wav : Tank
@@ -181,7 +183,9 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         playSoundsController = PlaySoundsController(files: soundArray)
         
         //put the sounds into specific positions
-        playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 0))
+        playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 50, y: 50, z: 0))
+        //playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 0, y: 0, z: 0))
+        //playSoundsController?.updateVolume(index: 11, volume: 0.2)
         
     }
     

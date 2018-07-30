@@ -129,8 +129,10 @@ class PlaySoundsController {
         player[index].position = position
     }
     
-    func updateAngularOrientation(_ degreesYaw: Float){
+    func updateAngularOrientation(_ degreesYaw: Float, _ rPart: Float, _ pPart: Float){
         mixer3d.listenerAngularOrientation.yaw = degreesYaw
+        mixer3d.listenerAngularOrientation.roll = rPart
+        mixer3d.listenerAngularOrientation.pitch = pPart
     }
     
     func updateListenerPosition(_ x: Float, _ y: Float, _ z: Float){

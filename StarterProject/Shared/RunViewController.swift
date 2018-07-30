@@ -9,10 +9,12 @@
 import UIKit
 import AVFoundation
 import MetaWear
+
 class RunViewController: UIViewController, SendScenarioDelegate {
     
     var scenario: Int = 0
     var soundArray : [String] = []
+    
     
     
     var optionsViewController: OptionsViewController?
@@ -22,7 +24,7 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         print("Scenario: " + String(scenario))
     }
     
-    var playSoundsController: PlaySoundsController? = nil
+    var playSoundsController: PlaySoundsController!
     
     @IBOutlet weak var deviceStatus: UILabel!
     
@@ -87,10 +89,14 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         let y = radians(abs(365 - obj.y))
         let z = radians(obj.r)
         
+        print(x)
+        print(y)
+        print(z)
+        
         print("X: " + String(x))
         print("Y: " + String(y))
         print("Z: " + String(z))
-        playSoundsController?.updateAngularOrientation(abs(Float(365 - obj.y)))
+        playSoundsController?.updateAngularOrientation(Float(obj.h), Float(obj.p), Float(obj.r))
         
         // Send OSC here
     }
@@ -200,13 +206,13 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         //updates the position of the sound based on the scenario
         switch (scenario){
         case 1:
-            playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 5))
+            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 1000, y: 0, z: 0))
             
         case 2:
-            playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
+            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
             
         case 3:
-            playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
+            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
             
         default:
             print("Scenario not found")

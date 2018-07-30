@@ -277,7 +277,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDr-aj-5pj">
                                 <rect key="frame" x="45" y="72" width="285" height="127"/>
                                 <string key="text">Select a
-                                    Situation</string>
+Situation</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -478,6 +478,6 @@
         <image name="wifi_d1" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eem-o9-Ytg"/>
+        <segue reference="bcy-To-MQZ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -21,7 +21,6 @@ class OptionsViewController: UIViewController {
             print("Preparing for RunViewController")
             runViewController.device = self.device
             runViewController.scenario = scenarioSelected
-            print("HERE: SCENARIO = " + String(runViewController.scenario))
         }
         else if let customViewController = segue.destination as?
             CustomViewController {

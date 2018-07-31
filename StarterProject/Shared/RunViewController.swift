@@ -169,19 +169,15 @@ class RunViewController: UIViewController {
             soundArray.append(String(i) + ".wav")
         }
         
-        print("Sounds are in array")
         
         //initializing the player with the soundArray files
         playSoundsController = PlaySoundsController(files: soundArray)
-        
-        print("sounds loaded")
         
         //updates the position of the sound based on the scenario
         switch (scenario){
         case 1:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 0, z: 0))
-            print("HERE!")
-            playSoundsController.isUsed(index: 0)
+            
         case 2:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
             

@@ -99,10 +99,6 @@ class RunViewController: UIViewController {
         let y = radians(abs(365 - obj.y))
         let z = radians(obj.r)
         
-        print(x)
-        print(y)
-        print(z)
-        
         print("X: " + String(x))
         print("Y: " + String(y))
         print("Z: " + String(z))
@@ -140,7 +136,7 @@ class RunViewController: UIViewController {
     @IBAction func startPressed(_ sender: UIButton) {
         device.sensorFusion?.eulerAngle.startNotificationsAsync { (obj, error) in
             //uncomment the next line to start retrieving values
-            //self.getFusionValues(obj: obj!)
+            self.getFusionValues(obj: obj!)
             }.success { result in
                 print("Successfully subscribed")
             }.failure { error in

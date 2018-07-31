@@ -69,6 +69,9 @@ class CustomViewController: UIViewController {
         //changed
         scale100 = 100.0 / maxXPos
         
+        
+        doneButton.setBackgroundImage(UIImage(named: "buttonimage"), for: UIControlState.normal)
+        
         //changed to...
         //set center of graph to (0,0)
         dragViewCenterX = Double(dragView.frame.width / 2)

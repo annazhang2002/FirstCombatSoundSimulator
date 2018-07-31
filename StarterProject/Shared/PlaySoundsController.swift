@@ -101,7 +101,7 @@ class PlaySoundsController {
     }
     
     func play(index: Int){
-        player[index].play()
+        player[index].play(at: AVAudioTime(hostTime: 0))
     }
     
     func stop(index: Int){

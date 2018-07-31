@@ -158,46 +158,18 @@ class RunViewController: UIViewController {
          * 2.wav : Explosion 1
          * 3.wav : Grenade Launcher
          * 4.wav : Helicopter 2
-         * 5.wav : Helicopter Flyby **stereo
-         * 6.wav : Helicopter 1 *****
-         * 7.wav : Machine Gun 1
-         * 8.wav : Machine Gun 2
-         * 9.wav : Machine Gun 3
-         * 10.wav : Machine Gun 4 ** fade out
-         * 11.wav : Overal Battle ------ place at the origin in each scenario
-         * 12.wav : Shotgun
-         * 13.wav : Sniper Rifle
-         * 14.wav : Tank
+         * 5.wav : Helicopter Flyby
+         * 6.wav : Machine Gun 3
+         * 7.wav : Overall Battle ------ place at the origin in each scenario
+         * 8.wav : Shotgun
+         * 9.wav : Sniper Rifle
+         * 10.wav : Tank
          */
         
         //adds the sounds to the array and updates positions
-        for i in 0...14 {
+        for i in 0...10 {
             soundArray.append(String(i) + ".wav")
         }
-        
-        
-        /*
-        switch (scenario) {
-        case 1:
-            //adds the sounds to the array
-            soundArray.append("0.wav")
-            soundArray.append("2.wav")
-            soundArray.append("6.wav")
-            soundArray.append("8.wav")
-            soundArray.append("13.wav")
-            soundArray.append("14.wav")
-
-        case 2:
-            //adds the sounds to the array
-            soundArray.append("11.wav")
-            
-        case 3:
-            //adds the sounds to the array
-            soundArray.append("11.wav")
-        default:
-            print("Scenario not found")
-        }
-        */
         
         print("Sounds are in array")
         
@@ -211,8 +183,6 @@ class RunViewController: UIViewController {
         case 1:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 0, z: 0))
             
-            print ("In here")
-            print ("position is 10000")
         case 2:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
             
@@ -229,11 +199,6 @@ class RunViewController: UIViewController {
         //playSoundsController?.updatePosition(index: 11, position: AVAudio3DPoint(x: 0, y: 0, z: 0))
         //playSoundsController?.updateVolume(index: 11, volume: 0.2)
         
-        /*
-         for index in 0...14 {
-         soundArray.append(String(index) + ".wav")
-         }
-         */
     }
     
 }

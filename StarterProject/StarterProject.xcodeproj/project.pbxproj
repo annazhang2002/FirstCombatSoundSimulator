@@ -28,9 +28,7 @@
 		BC31A9FBED54BD932058B42E /* Pods_Starter_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B810285FECA2430C1FAEF3F /* Pods_Starter_tvOS.framework */; };
 		C5D0D37D211017F500CE19EB /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D36E211017F400CE19EB /* 9.wav */; };
 		C5D0D37E211017F500CE19EB /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D36F211017F400CE19EB /* 10.wav */; };
-		C5D0D37F211017F500CE19EB /* 13.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D370211017F400CE19EB /* 13.wav */; };
 		C5D0D380211017F500CE19EB /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D371211017F400CE19EB /* 1.wav */; };
-		C5D0D381211017F500CE19EB /* 11.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D372211017F400CE19EB /* 11.wav */; };
 		C5D0D382211017F500CE19EB /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D373211017F400CE19EB /* 0.wav */; };
 		C5D0D383211017F500CE19EB /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D374211017F400CE19EB /* 7.wav */; };
 		C5D0D384211017F500CE19EB /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D375211017F400CE19EB /* 3.wav */; };
@@ -38,8 +36,6 @@
 		C5D0D386211017F500CE19EB /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D377211017F400CE19EB /* 2.wav */; };
 		C5D0D387211017F500CE19EB /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D378211017F400CE19EB /* 8.wav */; };
 		C5D0D388211017F500CE19EB /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D379211017F400CE19EB /* 4.wav */; };
-		C5D0D389211017F500CE19EB /* 12.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D37A211017F400CE19EB /* 12.wav */; };
-		C5D0D38A211017F500CE19EB /* 14.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D37B211017F500CE19EB /* 14.wav */; };
 		C5D0D38B211017F500CE19EB /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D37C211017F500CE19EB /* 5.wav */; };
 		E829A8A800A7AFC5A4C5DA7A /* Pods_Starter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3D37560DD979815A53DF1B /* Pods_Starter_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -76,9 +72,7 @@
 		BC9E019C266AD9823B5E877D /* Pods-Starter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Starter-tvOS/Pods-Starter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		C5D0D36E211017F400CE19EB /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
 		C5D0D36F211017F400CE19EB /* 10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10.wav; sourceTree = "<group>"; };
-		C5D0D370211017F400CE19EB /* 13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13.wav; sourceTree = "<group>"; };
 		C5D0D371211017F400CE19EB /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
-		C5D0D372211017F400CE19EB /* 11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11.wav; sourceTree = "<group>"; };
 		C5D0D373211017F400CE19EB /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
 		C5D0D374211017F400CE19EB /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
 		C5D0D375211017F400CE19EB /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
@@ -86,8 +80,6 @@
 		C5D0D377211017F400CE19EB /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
 		C5D0D378211017F400CE19EB /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
 		C5D0D379211017F400CE19EB /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
-		C5D0D37A211017F400CE19EB /* 12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12.wav; sourceTree = "<group>"; };
-		C5D0D37B211017F500CE19EB /* 14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14.wav; sourceTree = "<group>"; };
 		C5D0D37C211017F500CE19EB /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
 		F3CC4717E50B1C51696459B4 /* Pods_Starter_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starter_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -144,10 +136,6 @@
 				C5D0D378211017F400CE19EB /* 8.wav */,
 				C5D0D36E211017F400CE19EB /* 9.wav */,
 				C5D0D36F211017F400CE19EB /* 10.wav */,
-				C5D0D372211017F400CE19EB /* 11.wav */,
-				C5D0D37A211017F400CE19EB /* 12.wav */,
-				C5D0D370211017F400CE19EB /* 13.wav */,
-				C5D0D37B211017F500CE19EB /* 14.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -355,20 +343,16 @@
 				C5D0D383211017F500CE19EB /* 7.wav in Resources */,
 				402973791DB8260000EC8C32 /* Main.storyboard in Resources */,
 				C5D0D38B211017F500CE19EB /* 5.wav in Resources */,
-				C5D0D381211017F500CE19EB /* 11.wav in Resources */,
 				C5D0D388211017F500CE19EB /* 4.wav in Resources */,
 				C5D0D380211017F500CE19EB /* 1.wav in Resources */,
 				C5D0D387211017F500CE19EB /* 8.wav in Resources */,
 				C5D0D385211017F500CE19EB /* 6.wav in Resources */,
 				402973391DB81F5B00EC8C32 /* LaunchScreen.storyboard in Resources */,
-				C5D0D389211017F500CE19EB /* 12.wav in Resources */,
 				C5D0D37E211017F500CE19EB /* 10.wav in Resources */,
-				C5D0D37F211017F500CE19EB /* 13.wav in Resources */,
 				C5D0D382211017F500CE19EB /* 0.wav in Resources */,
 				C5D0D386211017F500CE19EB /* 2.wav in Resources */,
 				402973601DB81F5B00EC8C32 /* Assets.xcassets in Resources */,
 				C5D0D37D211017F500CE19EB /* 9.wav in Resources */,
-				C5D0D38A211017F500CE19EB /* 14.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -129,6 +129,7 @@ class PlaySoundsController {
     }
     
     func isUsed(index: Int) -> DarwinBoolean {
+        print("Index: " + String(index) + " position: (" + String(player[index].position.x) + ", " + String(player[index].position.y) + ", " + String(player[index].position.z) + ")")
         if (player[index].position.x == 0.0 && player[index].position.y == 0.0 && player[index].position.z == 0.0 ) {
             return false
         }

@@ -8,8 +8,12 @@
 
 import UIKit
 import AVFoundation
+import MetaWear
 
 class CustomViewController: UIViewController {
+    
+    var device: MBLMetaWear!
+    var scenario: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +25,13 @@ class CustomViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let runViewController = segue.destination as?
+            RunViewController {
+            print("Preparing for RunViewController")
+            runViewController.device = self.device
+            runViewController.scenario = self.scenario
+        }
+    }
     
 }

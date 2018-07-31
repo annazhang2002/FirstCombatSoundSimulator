@@ -13,7 +13,7 @@ import MetaWear
 class OptionsViewController: UIViewController {
     
     var device: MBLMetaWear? = nil
-    private var scenarioSelected = -1
+    var scenarioSelected = 0
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let runViewController = segue.destination as?
@@ -21,15 +21,21 @@ class OptionsViewController: UIViewController {
             print("Preparing for RunViewController")
             runViewController.device = self.device
             runViewController.scenario = scenarioSelected
+            print("HERE: SCENARIO = " + String(runViewController.scenario))
+        }
+        else if let customViewController = segue.destination as?
+            CustomViewController {
+            print("Preparing for CustomViewController")
+            customViewController.device = self.device
+            customViewController.scenario = scenarioSelected
         }
     }
     
-    
-    @IBAction func scenario1Pressed(_ sender: UIButton) {
+    @IBAction func aScenario1Pressed(_ sender: UIButton) {
         self.scenarioSelected = 1
     }
     
-    @IBAction func scenario2Pressed(_ sender: UIButton) {
+    @IBAction func aScenario2Pressed(_ sender: UIButton) {
         self.scenarioSelected = 2
     }
     

@@ -272,8 +272,8 @@ Simulator</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Scenario #2"/>
                                 <connections>
-                                    <action selector="scenario2Pressed:" destination="OWh-QH-0Dy" eventType="touchUpInside" id="bxt-MK-94i"/>
-                                    <segue destination="Cjo-jF-y76" kind="push" id="eem-o9-Ytg"/>
+                                    <action selector="aScenario2Pressed:" destination="OWh-QH-0Dy" eventType="touchUpInside" id="M3c-OH-bWB"/>
+                                    <segue destination="Cjo-jF-y76" kind="push" id="KwX-6b-eUi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBD-JU-EIl">
@@ -285,7 +285,7 @@ Simulator</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Custom..."/>
                                 <connections>
-                                    <segue destination="PsE-Kk-gdF" kind="push" id="p4M-Mo-Bml"/>
+                                    <segue destination="PsE-Kk-gdF" kind="push" id="1Kx-GD-nPA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDr-aj-5pj">
@@ -306,8 +306,8 @@ Situation</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Scenario #1"/>
                                 <connections>
-                                    <action selector="scenario1Pressed:" destination="OWh-QH-0Dy" eventType="touchUpInside" id="pmg-0H-z7T"/>
-                                    <segue destination="Cjo-jF-y76" kind="push" id="bcy-To-MQZ"/>
+                                    <action selector="aScenario1Pressed:" destination="OWh-QH-0Dy" eventType="touchUpInside" id="POq-m7-8Ah"/>
+                                    <segue destination="Cjo-jF-y76" kind="push" id="LMM-sz-YFA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -499,6 +499,6 @@ Situation</string>
         <image name="wifi_d1" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1EC-4Z-rJO"/>
+        <segue reference="KwX-6b-eUi"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -130,8 +130,6 @@ class RunViewController: UIViewController {
                 playSoundsController.play(index: sound.offset)
             }
         }
-        
-        playSoundsController.play(index: 0)
     }
     
     @IBAction func stopPressed(_ sender: UIButton) {
@@ -182,7 +180,8 @@ class RunViewController: UIViewController {
         switch (scenario){
         case 1:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 0, z: 0))
-            
+            print("HERE!")
+            playSoundsController.isUsed(index: 0)
         case 2:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
             

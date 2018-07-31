@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F32BFDB210BDA4000706B9C /* ScanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFCA210BDA3D00706B9C /* ScanTableViewController.swift */; };
-		3F32BFE1210BDA4000706B9C /* headViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFD1210BDA3E00706B9C /* headViewController.swift */; };
 		3F32BFE2210BDA4000706B9C /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFD2210BDA3E00706B9C /* CustomViewController.swift */; };
 		3F32BFE3210BDA4000706B9C /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFD3210BDA3F00706B9C /* RunViewController.swift */; };
 		3F32BFE4210BDA4000706B9C /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFD4210BDA3F00706B9C /* DeviceViewController.swift */; };
@@ -16,7 +15,6 @@
 		3F32BFE6210BDA4000706B9C /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFD6210BDA3F00706B9C /* OptionsViewController.swift */; };
 		3F32BFE7210BDA4000706B9C /* PlaySoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFD7210BDA3F00706B9C /* PlaySoundsController.swift */; };
 		3F32BFE8210BDA4000706B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32BFD8210BDA3F00706B9C /* AppDelegate.swift */; };
-		3F32BFE9210BDA4000706B9C /* camo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F32BFDA210BDA3F00706B9C /* camo.jpg */; };
 		402973391DB81F5B00EC8C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402973371DB81F5B00EC8C32 /* LaunchScreen.storyboard */; };
 		402973471DB81F5B00EC8C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402973451DB81F5B00EC8C32 /* Main.storyboard */; };
 		402973501DB81F5B00EC8C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029734F1DB81F5B00EC8C32 /* AppDelegate.swift */; };
@@ -53,7 +51,6 @@
 		263A788447671602C2AE4FFF /* Pods-Starter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Starter-tvOS/Pods-Starter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2C1A4E13D173813A39F97132 /* Pods-Starter-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Starter-iOS/Pods-Starter-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3F32BFCA210BDA3D00706B9C /* ScanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanTableViewController.swift; sourceTree = "<group>"; };
-		3F32BFD1210BDA3E00706B9C /* headViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headViewController.swift; sourceTree = "<group>"; };
 		3F32BFD2210BDA3E00706B9C /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		3F32BFD3210BDA3F00706B9C /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		3F32BFD4210BDA3F00706B9C /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +58,6 @@
 		3F32BFD6210BDA3F00706B9C /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		3F32BFD7210BDA3F00706B9C /* PlaySoundsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsController.swift; sourceTree = "<group>"; };
 		3F32BFD8210BDA3F00706B9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F32BFDA210BDA3F00706B9C /* camo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camo.jpg; sourceTree = "<group>"; };
 		402973281DB81F5A00EC8C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4029732D1DB81F5B00EC8C32 /* StarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402973381DB81F5B00EC8C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,14 +130,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3F32BFD9210BDA3F00706B9C /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				3F32BFDA210BDA3F00706B9C /* camo.jpg */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		3F32BFEA210E253C00706B9C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,11 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				3F32BFEA210E253C00706B9C /* Sounds */,
-				3F32BFD9210BDA3F00706B9C /* Images */,
 				3F32BFD8210BDA3F00706B9C /* AppDelegate.swift */,
 				3F32BFD2210BDA3E00706B9C /* CustomViewController.swift */,
 				3F32BFD4210BDA3F00706B9C /* DeviceViewController.swift */,
-				3F32BFD1210BDA3E00706B9C /* headViewController.swift */,
 				3F32BFD5210BDA3F00706B9C /* MainTableViewController.swift */,
 				3F32BFD6210BDA3F00706B9C /* OptionsViewController.swift */,
 				3F32BFD7210BDA3F00706B9C /* PlaySoundsController.swift */,
@@ -369,7 +355,6 @@
 				C5D0D383211017F500CE19EB /* 7.wav in Resources */,
 				402973791DB8260000EC8C32 /* Main.storyboard in Resources */,
 				C5D0D38B211017F500CE19EB /* 5.wav in Resources */,
-				3F32BFE9210BDA4000706B9C /* camo.jpg in Resources */,
 				C5D0D381211017F500CE19EB /* 11.wav in Resources */,
 				C5D0D388211017F500CE19EB /* 4.wav in Resources */,
 				C5D0D380211017F500CE19EB /* 1.wav in Resources */,
@@ -551,7 +536,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F32BFE2210BDA4000706B9C /* CustomViewController.swift in Sources */,
-				3F32BFE1210BDA4000706B9C /* headViewController.swift in Sources */,
 				3F32BFE4210BDA4000706B9C /* DeviceViewController.swift in Sources */,
 				3F32BFE8210BDA4000706B9C /* AppDelegate.swift in Sources */,
 				3F32BFE7210BDA4000706B9C /* PlaySoundsController.swift in Sources */,

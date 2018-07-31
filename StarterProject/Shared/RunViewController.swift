@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import MetaWear
 
-class RunViewController: UIViewController, SendScenarioDelegate {
+class RunViewController: UIViewController {
     
     var scenario: Int = 0
     var soundArray : [String] = []
@@ -35,15 +35,12 @@ class RunViewController: UIViewController, SendScenarioDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         
-        /*
          device.addObserver(self, forKeyPath: "state", options: NSKeyValueObservingOptions.new, context: nil)
          device.connectAsync().success { _ in
-         self.device.led?.flashColorAsync(UIColor.green, withIntensity: 1.0, numberOfFlashes: 3)
-         NSLog("We are connected")
+            self.device.led?.flashColorAsync(UIColor.green, withIntensity: 1.0, numberOfFlashes: 3)
+            NSLog("We are connected")
          }
-         */
         loadSounds()
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -113,14 +110,13 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         //set background image
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo.jpg")!)
-        
-        optionsViewController?.scenarioSender = self
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo")!)
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
         device.sensorFusion?.eulerAngle.startNotificationsAsync { (obj, error) in
-            self.getFusionValues(obj: obj!)
+            //uncomment the next line to start retrieving values
+            //self.getFusionValues(obj: obj!)
             }.success { result in
                 print("Successfully subscribed")
             }.failure { error in

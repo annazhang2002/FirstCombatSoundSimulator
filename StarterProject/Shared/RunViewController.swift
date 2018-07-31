@@ -12,9 +12,24 @@ import MetaWear
 
 class RunViewController: UIViewController, SendScenarioDelegate {
     
+    var pointArr: [CGPoint] = []
+    
+    @IBOutlet weak var coordinateLabel1: UILabel!
+    @IBOutlet weak var coordinateLabel2: UILabel!
+    
+    var labelArr: [UILabel] = []
+    
+    func updateLabels(){
+        for i in 0..<labelArr.count {
+            print("text changed")
+            let point = pointArr[i]
+            labelArr[i].text = String("x:\(point.x),y:\(point.y)")
+        }
+    }
+    
+/////////////////////////////////
     var scenario: Int = 0
     var soundArray : [String] = []
-    
     
     
     var optionsViewController: OptionsViewController?
@@ -116,6 +131,15 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo.jpg")!)
         
         optionsViewController?.scenarioSender = self
+        
+        labelArr = [coordinateLabel1, coordinateLabel2]
+        print("labelArr count: \(labelArr.count)")
+        print("pointArr count: \(pointArr.count)")
+        for i in 0..<labelArr.count {
+            print("text changed")
+            let point = pointArr[i]
+            labelArr[i].text = String("x:\(point.x),y:\(point.y)")
+        }
     }
     
     @IBAction func startPressed(_ sender: UIButton) {

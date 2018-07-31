@@ -12,10 +12,24 @@ import MetaWear
 
 class RunViewController: UIViewController, SendScenarioDelegate {
     
+    var pointArr: [CGPoint] = []
+    
+    @IBOutlet weak var coordinateLabel1: UILabel!
+    @IBOutlet weak var coordinateLabel2: UILabel!
+    
+    var labelArr: [UILabel] = []
+    
+    func updateLabels(){
+        for i in 0..<labelArr.count {
+            print("text changed")
+            let point = pointArr[i]
+            labelArr[i].text = String("x:\(point.x),y:\(point.y)")
+        }
+    }
+    
+    /////////////////////
     var scenario: Int = 0
     var soundArray : [String] = []
-    
-    
     
     var optionsViewController: OptionsViewController?
     
@@ -41,7 +55,7 @@ class RunViewController: UIViewController, SendScenarioDelegate {
          self.device.led?.flashColorAsync(UIColor.green, withIntensity: 1.0, numberOfFlashes: 3)
          NSLog("We are connected")
          }
-         */
+        */
         loadSounds()
         
     }
@@ -114,7 +128,16 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         
         //set background image
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo.jpg")!)
-        
+        if scenario == 0{
+            labelArr = [coordinateLabel1, coordinateLabel2]
+            print("labelArr count: \(labelArr.count)")
+            print("pointArr count: \(pointArr.count)")
+            for i in 0..<labelArr.count {
+                print("text changed")
+                let point = pointArr[i]
+                labelArr[i].text = String("x:\(Int(point.x)),y:\(Int(point.y))")
+            }
+        }
         optionsViewController?.scenarioSender = self
     }
     
@@ -216,12 +239,12 @@ class RunViewController: UIViewController, SendScenarioDelegate {
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 0, z: 0))
             
             print ("In here")
-            print ("position is 10000")
         case 2:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
             
-        case 3:
-            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
+        case 0:
+            let point = pointArr[0]
+            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: Float(point.x), y: Float(point.y), z: 0))
             
         default:
             print("Scenario not found")

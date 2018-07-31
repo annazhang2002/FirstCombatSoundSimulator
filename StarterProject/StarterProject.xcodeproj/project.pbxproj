@@ -43,6 +43,9 @@
 		C5D0D389211017F500CE19EB /* 12.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D37A211017F400CE19EB /* 12.wav */; };
 		C5D0D38A211017F500CE19EB /* 14.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D37B211017F500CE19EB /* 14.wav */; };
 		C5D0D38B211017F500CE19EB /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D37C211017F500CE19EB /* 5.wav */; };
+		C5D0D38E2110353000CE19EB /* mickey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D38C2110353000CE19EB /* mickey.jpg */; };
+		C5D0D38F2110353000CE19EB /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D38D2110353000CE19EB /* cat.jpg */; };
+		C5D0D3932110D8BA00CE19EB /* 100x100 graph.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D0D3922110D8BA00CE19EB /* 100x100 graph.png */; };
 		E829A8A800A7AFC5A4C5DA7A /* Pods_Starter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3D37560DD979815A53DF1B /* Pods_Starter_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +96,9 @@
 		C5D0D37A211017F400CE19EB /* 12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12.wav; sourceTree = "<group>"; };
 		C5D0D37B211017F500CE19EB /* 14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14.wav; sourceTree = "<group>"; };
 		C5D0D37C211017F500CE19EB /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		C5D0D38C2110353000CE19EB /* mickey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mickey.jpg; sourceTree = "<group>"; };
+		C5D0D38D2110353000CE19EB /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		C5D0D3922110D8BA00CE19EB /* 100x100 graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "100x100 graph.png"; sourceTree = "<group>"; };
 		F3CC4717E50B1C51696459B4 /* Pods_Starter_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starter_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +143,9 @@
 		3F32BFD9210BDA3F00706B9C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C5D0D3922110D8BA00CE19EB /* 100x100 graph.png */,
+				C5D0D38D2110353000CE19EB /* cat.jpg */,
+				C5D0D38C2110353000CE19EB /* mickey.jpg */,
 				3F32BFDA210BDA3F00706B9C /* camo.jpg */,
 			);
 			path = Images;
@@ -376,6 +385,8 @@
 				C5D0D387211017F500CE19EB /* 8.wav in Resources */,
 				C5D0D385211017F500CE19EB /* 6.wav in Resources */,
 				402973391DB81F5B00EC8C32 /* LaunchScreen.storyboard in Resources */,
+				C5D0D38E2110353000CE19EB /* mickey.jpg in Resources */,
+				C5D0D38F2110353000CE19EB /* cat.jpg in Resources */,
 				C5D0D389211017F500CE19EB /* 12.wav in Resources */,
 				C5D0D37E211017F500CE19EB /* 10.wav in Resources */,
 				C5D0D37F211017F500CE19EB /* 13.wav in Resources */,
@@ -383,6 +394,7 @@
 				C5D0D386211017F500CE19EB /* 2.wav in Resources */,
 				402973601DB81F5B00EC8C32 /* Assets.xcassets in Resources */,
 				C5D0D37D211017F500CE19EB /* 9.wav in Resources */,
+				C5D0D3932110D8BA00CE19EB /* 100x100 graph.png in Resources */,
 				C5D0D38A211017F500CE19EB /* 14.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,7 @@ class CustomViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //set background image
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo.jpg")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo")!)
         
         
     }

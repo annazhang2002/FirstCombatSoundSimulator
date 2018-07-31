@@ -33,7 +33,6 @@ class PlaySoundsController {
         var fileExtensionCount : Int
         var fileExtension : String = ""
         var fileName : String =  ""
-        let loop = AVAudioPlayerNodeBufferOptions.loops
         var counter = 0
         
         let mixer = engine.mainMixerNode
@@ -82,7 +81,7 @@ class PlaySoundsController {
             engine.connect(player[counter], to: mixer3d, format: audioFile.processingFormat)
             mixer.renderingAlgorithm = .sphericalHead
             player[counter].renderingAlgorithm = AVAudio3DMixingRenderingAlgorithm(rawValue: 1)!
-            player[counter].scheduleBuffer(buffer, at: nil, options: loop, completionHandler: nil)
+            player[counter].scheduleBuffer(buffer, at: nil, options: .loops, completionHandler: nil)
             counter += 1
             
         }
@@ -98,11 +97,11 @@ class PlaySoundsController {
         catch {
             print("Cannot initialize engine")
         }
-        initPositions()//(mixer3d, playerPosition: player)
+        initPositions()
     }
     
     func play(index: Int){
-        player[index].play(at: AVAudioTime(hostTime: 0))
+        player[index].play()
     }
     
     func stop(index: Int){

@@ -129,6 +129,13 @@ class PlaySoundsController {
         player[index].position = position
     }
     
+    func isUsed(index: Int) -> DarwinBoolean {
+        if (player[index].position.x == 0.0 && player[index].position.y == 0.0 && player[index].position.z == 0.0 ) {
+            return false
+        }
+        return true
+    }
+    
     func updateAngularOrientation(_ degreesYaw: Float, _ rPart: Float, _ pPart: Float){
         mixer3d.listenerAngularOrientation.yaw = degreesYaw
         mixer3d.listenerAngularOrientation.roll = rPart

@@ -128,12 +128,14 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         }
         
         //plays the sounds in the array
-        /*
+        
         for sound in soundArray.enumerated() {
-            playSoundsController?.play(index: sound.offset)
+            if (playSoundsController.isUsed(index: sound.offset)).boolValue {
+                playSoundsController.play(index: sound.offset)
+            }
         }
-        */
-        playSoundsController?.play(index: 0)
+        
+        playSoundsController.play(index: 0)
     }
     
     @IBAction func stopPressed(_ sender: UIButton) {
@@ -173,6 +175,12 @@ class RunViewController: UIViewController, SendScenarioDelegate {
          */
         
         //adds the sounds to the array and updates positions
+        for i in 0...14 {
+            soundArray.append(String(i) + ".wav")
+        }
+        
+        
+        /*
         switch (scenario) {
         case 1:
             //adds the sounds to the array
@@ -193,10 +201,9 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         default:
             print("Scenario not found")
         }
+        */
         
         print("Sounds are in array")
-        
-        soundArray.append("11.wav")
         
         //initializing the player with the soundArray files
         playSoundsController = PlaySoundsController(files: soundArray)
@@ -206,7 +213,8 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         //updates the position of the sound based on the scenario
         switch (scenario){
         case 1:
-            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 2, y: 50, z: 0))
+            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 0, z: 0))
+            
             print ("In here")
             print ("position is 10000")
         case 2:

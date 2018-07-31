@@ -148,7 +148,7 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         
         //plays the sounds in the array
         for sound in soundArray.enumerated() {
-            playSoundsController?.stop(index: sound.offset)
+            playSoundsController.stop(index: sound.offset)
         }
         
     }

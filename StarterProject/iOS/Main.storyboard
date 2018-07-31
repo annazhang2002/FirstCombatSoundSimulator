@@ -503,6 +503,7 @@ Situation</string>
                         <outlet property="coordinateLabel1" destination="RfL-eH-EV8" id="atJ-1b-zg6"/>
                         <outlet property="coordinateLabel2" destination="6BS-gJ-qum" id="HFa-uE-f8g"/>
                         <outlet property="deviceStatus" destination="yAz-QH-8YV" id="LQu-Ks-4lw"/>
+                        <outlet property="stopButton" destination="Lf2-S0-Haf" id="51k-MZ-GuP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3G-4A-LV6" userLabel="First Responder" sceneMemberID="firstResponder"/>

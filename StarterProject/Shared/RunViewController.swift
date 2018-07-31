@@ -19,6 +19,8 @@ class RunViewController: UIViewController {
     
     var pointArr: [CGPoint] = []
     
+    @IBOutlet weak var stopButton: UIButton!
+    
     @IBOutlet weak var coordinateLabel1: UILabel!
     @IBOutlet weak var coordinateLabel2: UILabel!
     
@@ -58,7 +60,7 @@ class RunViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
+        stopPressed(stopButton)
         //disconnect the sensors when the view disappears
         device.removeObserver(self, forKeyPath: "state")
         device.led?.flashColorAsync(UIColor.red, withIntensity: 1.0, numberOfFlashes: 3)

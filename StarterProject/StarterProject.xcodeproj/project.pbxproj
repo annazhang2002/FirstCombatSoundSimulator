@@ -23,7 +23,6 @@
 		3F32C01B210E28AE00706B9C /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C00C210E28AD00706B9C /* 9.wav */; };
 		3F32C01C210E28AE00706B9C /* 14.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C00D210E28AD00706B9C /* 14.wav */; };
 		3F32C01D210E28AE00706B9C /* 13.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C00E210E28AD00706B9C /* 13.wav */; };
-		3F32C01E210E28AE00706B9C /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C00F210E28AD00706B9C /* 0.wav */; };
 		3F32C01F210E28AE00706B9C /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C010210E28AD00706B9C /* 4.wav */; };
 		3F32C020210E28AE00706B9C /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C011210E28AD00706B9C /* 7.wav */; };
 		3F32C021210E28AE00706B9C /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C012210E28AD00706B9C /* 6.wav */; };
@@ -32,6 +31,7 @@
 		3F32C024210E28AE00706B9C /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C015210E28AE00706B9C /* 2.wav */; };
 		3F32C025210E28AE00706B9C /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C016210E28AE00706B9C /* 3.wav */; };
 		3F32C026210E28AE00706B9C /* 11.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C017210E28AE00706B9C /* 11.wav */; };
+		3F32C02821100D6900706B9C /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F32C02721100D6800706B9C /* 0.wav */; };
 		402973391DB81F5B00EC8C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402973371DB81F5B00EC8C32 /* LaunchScreen.storyboard */; };
 		402973471DB81F5B00EC8C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402973451DB81F5B00EC8C32 /* Main.storyboard */; };
 		402973501DB81F5B00EC8C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029734F1DB81F5B00EC8C32 /* AppDelegate.swift */; };
@@ -68,7 +68,6 @@
 		3F32C00C210E28AD00706B9C /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 9.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/9.wav"; sourceTree = "<group>"; };
 		3F32C00D210E28AD00706B9C /* 14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 14.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/14.wav"; sourceTree = "<group>"; };
 		3F32C00E210E28AD00706B9C /* 13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 13.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/13.wav"; sourceTree = "<group>"; };
-		3F32C00F210E28AD00706B9C /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 0.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/0.wav"; sourceTree = "<group>"; };
 		3F32C010210E28AD00706B9C /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/4.wav"; sourceTree = "<group>"; };
 		3F32C011210E28AD00706B9C /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 7.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/7.wav"; sourceTree = "<group>"; };
 		3F32C012210E28AD00706B9C /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 6.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/6.wav"; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		3F32C015210E28AE00706B9C /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/2.wav"; sourceTree = "<group>"; };
 		3F32C016210E28AE00706B9C /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/3.wav"; sourceTree = "<group>"; };
 		3F32C017210E28AE00706B9C /* 11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 11.wav; path = "../../../../../Downloads/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/Sounds/11.wav"; sourceTree = "<group>"; };
+		3F32C02721100D6800706B9C /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
 		402973281DB81F5A00EC8C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4029732D1DB81F5B00EC8C32 /* StarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402973381DB81F5B00EC8C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		3F32BFEA210E253C00706B9C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				3F32C00F210E28AD00706B9C /* 0.wav */,
+				3F32C02721100D6800706B9C /* 0.wav */,
 				3F32C014210E28AE00706B9C /* 1.wav */,
 				3F32C015210E28AE00706B9C /* 2.wav */,
 				3F32C016210E28AE00706B9C /* 3.wav */,
@@ -365,7 +365,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F32C01E210E28AE00706B9C /* 0.wav in Resources */,
 				3F32C020210E28AE00706B9C /* 7.wav in Resources */,
 				3F32C024210E28AE00706B9C /* 2.wav in Resources */,
 				3F32C023210E28AE00706B9C /* 1.wav in Resources */,
@@ -376,6 +375,7 @@
 				3F32C01B210E28AE00706B9C /* 9.wav in Resources */,
 				3F32C022210E28AE00706B9C /* 8.wav in Resources */,
 				3F32C018210E28AE00706B9C /* 10.wav in Resources */,
+				3F32C02821100D6900706B9C /* 0.wav in Resources */,
 				402973791DB8260000EC8C32 /* Main.storyboard in Resources */,
 				3F32BFE9210BDA4000706B9C /* camo.jpg in Resources */,
 				3F32C021210E28AE00706B9C /* 6.wav in Resources */,

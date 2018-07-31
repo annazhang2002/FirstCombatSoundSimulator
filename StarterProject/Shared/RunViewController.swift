@@ -90,11 +90,11 @@ class RunViewController: UIViewController {
     }
     
     func getFusionValues(obj: MBLEulerAngleData){
-        
+        /*
         let xS =  String(format: "%.02f", (obj.p))
         let yS =  String(format: "%.02f", (obj.y))
         let zS =  String(format: "%.02f", (obj.r))
-        
+        */
         let x = radians((obj.p * -1) + 90)
         let y = radians(abs(365 - obj.y))
         let z = radians(obj.r)
@@ -134,8 +134,10 @@ class RunViewController: UIViewController {
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
+        while self.device.state != .connected {
+            print("not connected yet")
+        }
         device.sensorFusion?.eulerAngle.startNotificationsAsync { (obj, error) in
-            //uncomment the next line to start retrieving values
             self.getFusionValues(obj: obj!)
             }.success { result in
                 print("Successfully subscribed")
@@ -150,6 +152,7 @@ class RunViewController: UIViewController {
                 playSoundsController.play(index: sound.offset)
             }
         }
+        
     }
     
     @IBAction func stopPressed(_ sender: UIButton) {

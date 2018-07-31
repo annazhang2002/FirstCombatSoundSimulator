@@ -67,7 +67,7 @@ class CustomViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo")!)
         
         //changed
-        scale100 = 100.0 / maxXPos
+        scale100 = 50.0 / maxXPos
         
         
         doneButton.setBackgroundImage(UIImage(named: "buttonimage"), for: UIControlState.normal)

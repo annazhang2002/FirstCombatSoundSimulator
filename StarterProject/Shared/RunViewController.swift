@@ -160,12 +160,12 @@ class RunViewController: UIViewController, SendScenarioDelegate {
          * 2.wav : Explosion 1
          * 3.wav : Grenade Launcher
          * 4.wav : Helicopter 2
-         * 5.wav : Helicopter Flyby
-         * 6.wav : Helicopter 1
+         * 5.wav : Helicopter Flyby **stereo
+         * 6.wav : Helicopter 1 *****
          * 7.wav : Machine Gun 1
          * 8.wav : Machine Gun 2
          * 9.wav : Machine Gun 3
-         * 10.wav : Machine Gun 4
+         * 10.wav : Machine Gun 4 ** fade out
          * 11.wav : Overal Battle ------ place at the origin in each scenario
          * 12.wav : Shotgun
          * 13.wav : Sniper Rifle
@@ -206,8 +206,9 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         //updates the position of the sound based on the scenario
         switch (scenario){
         case 1:
-            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 1000, y: 0, z: 0))
-            
+            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 2, y: 50, z: 0))
+            print ("In here")
+            print ("position is 10000")
         case 2:
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
             

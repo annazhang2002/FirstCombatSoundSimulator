@@ -115,6 +115,7 @@ class RunViewController: UIViewController {
     
     @IBAction func startPressed(_ sender: UIButton) {
         device.sensorFusion?.eulerAngle.startNotificationsAsync { (obj, error) in
+            //uncomment the next line to start retrieving values
             //self.getFusionValues(obj: obj!)
             }.success { result in
                 print("Successfully subscribed")

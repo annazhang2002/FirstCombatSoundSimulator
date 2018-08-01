@@ -358,20 +358,62 @@ Situation</string>
                                     <segue destination="Cjo-jF-y76" kind="push" id="1EC-4Z-rJO"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CzG-No-H8s" customClass="DragNDropView" customModule="StarterProject" customModuleProvider="target">
-                                <rect key="frame" x="20" y="333" width="334" height="334"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AK47" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-C7-QaI">
+                                <rect key="frame" x="20" y="278" width="37" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Explosion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h3-JD-bZI">
+                                <rect key="frame" x="79" y="278" width="66" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Helicopter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avs-Nw-9dI">
+                                <rect key="frame" x="152" y="278" width="71" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sniper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBp-rI-zKa">
+                                <rect key="frame" x="251" y="278" width="45" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwK-5h-npS">
+                                <rect key="frame" x="321" y="278" width="33" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CzG-No-H8s">
+                                <rect key="frame" x="20" y="303" width="334" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-WE-0Rf">
-                                        <rect key="frame" x="200" y="0.0" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mickey.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7V-xj-whN">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ak47image.png" translatesAutoresizingMaskIntoConstraints="NO" id="e7V-xj-whN">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helicopterImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-0Q-vI9">
+                                        <rect key="frame" x="152" y="0.0" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sniperImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="dNU-mt-4Yw">
+                                        <rect key="frame" x="237" y="0.0" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explosionImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-WE-0Rf">
+                                        <rect key="frame" x="76" y="0.0" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tankImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="5iF-KL-Kgx">
+                                        <rect key="frame" x="304" y="0.0" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="100x100 graph" translatesAutoresizingMaskIntoConstraints="NO" id="F5J-Ls-PhG">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="334"/>
+                                        <rect key="frame" x="0.0" y="30" width="334" height="334"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -380,8 +422,17 @@ Situation</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Avs-Nw-9dI" firstAttribute="leading" secondItem="3h3-JD-bZI" secondAttribute="trailing" constant="7" id="77G-Xm-QwT"/>
+                            <constraint firstItem="Avs-Nw-9dI" firstAttribute="centerX" secondItem="C8r-GB-qfL" secondAttribute="centerX" id="Gb4-ge-aWK"/>
+                            <constraint firstItem="QkO-C7-QaI" firstAttribute="top" secondItem="gty-dU-7xg" secondAttribute="bottom" constant="240" id="MNL-WR-EHq"/>
+                            <constraint firstItem="3h3-JD-bZI" firstAttribute="baseline" secondItem="Avs-Nw-9dI" secondAttribute="baseline" id="RLj-Yu-WhA"/>
+                            <constraint firstItem="Avs-Nw-9dI" firstAttribute="baseline" secondItem="sBp-rI-zKa" secondAttribute="baseline" id="W2c-4y-Og9"/>
+                            <constraint firstItem="JwK-5h-npS" firstAttribute="leading" secondItem="sBp-rI-zKa" secondAttribute="trailing" constant="25" id="Y4Y-dQ-CMO"/>
+                            <constraint firstItem="QkO-C7-QaI" firstAttribute="baseline" secondItem="3h3-JD-bZI" secondAttribute="baseline" id="ZjH-wa-GTH"/>
                             <constraint firstItem="RSf-QD-NhH" firstAttribute="top" secondItem="dDK-ua-ZDJ" secondAttribute="bottom" constant="555" id="jSY-qS-oyt"/>
                             <constraint firstItem="dDK-ua-ZDJ" firstAttribute="top" secondItem="gty-dU-7xg" secondAttribute="bottom" id="kWp-Sg-HEU"/>
+                            <constraint firstItem="3h3-JD-bZI" firstAttribute="leading" secondItem="QkO-C7-QaI" secondAttribute="trailing" constant="22" id="qg2-eA-mPc"/>
+                            <constraint firstItem="sBp-rI-zKa" firstAttribute="baseline" secondItem="JwK-5h-npS" secondAttribute="baseline" id="wCv-J0-PDj"/>
                             <constraint firstItem="dDK-ua-ZDJ" firstAttribute="trailing" secondItem="C8r-GB-qfL" secondAttribute="trailingMargin" constant="16" id="z3l-FU-oY1"/>
                         </constraints>
                     </view>
@@ -392,6 +443,9 @@ Situation</string>
                         <outlet property="graphView" destination="F5J-Ls-PhG" id="N3D-Co-ub2"/>
                         <outlet property="imageView1" destination="e7V-xj-whN" id="xCV-D6-Z6R"/>
                         <outlet property="imageView2" destination="9lg-WE-0Rf" id="0Ba-Zd-HBv"/>
+                        <outlet property="imageView3" destination="cW2-0Q-vI9" id="ytU-d1-Jwm"/>
+                        <outlet property="imageView4" destination="dNU-mt-4Yw" id="Lrs-kb-dHT"/>
+                        <outlet property="imageView5" destination="5iF-KL-Kgx" id="9Oq-6m-AcX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqe-Gp-UYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,6 +557,7 @@ Situation</string>
                         <outlet property="coordinateLabel1" destination="RfL-eH-EV8" id="atJ-1b-zg6"/>
                         <outlet property="coordinateLabel2" destination="6BS-gJ-qum" id="HFa-uE-f8g"/>
                         <outlet property="deviceStatus" destination="yAz-QH-8YV" id="LQu-Ks-4lw"/>
+                        <outlet property="startButton" destination="F87-rB-n9A" id="7Bc-Y4-OLT"/>
                         <outlet property="stopButton" destination="Lf2-S0-Haf" id="51k-MZ-GuP"/>
                     </connections>
                 </viewController>
@@ -514,8 +569,11 @@ Situation</string>
     <resources>
         <image name="100x100 graph" width="334" height="334"/>
         <image name="MetaWear" width="157" height="157"/>
-        <image name="cat.jpg" width="57" height="57"/>
-        <image name="mickey.jpg" width="57" height="57"/>
+        <image name="ak47image.png" width="30" height="30"/>
+        <image name="explosionImage.png" width="30" height="30"/>
+        <image name="helicopterImage.png" width="30" height="30"/>
+        <image name="sniperImage.png" width="30" height="30"/>
+        <image name="tankImage.png" width="30" height="30"/>
         <image name="wifi_d1" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -12,6 +12,8 @@ import MetaWear
 
 class RunViewController: UIViewController {
     
+    @IBOutlet weak var startButton: UIButton!
+    
     var scenario: Int = 0
     var soundArray : [String] = []
     
@@ -96,7 +98,7 @@ class RunViewController: UIViewController {
         let xS =  String(format: "%.02f", (obj.p))
         let yS =  String(format: "%.02f", (obj.y))
         let zS =  String(format: "%.02f", (obj.r))
-        */
+        
         let x = radians((obj.p * -1) + 90)
         let y = radians(abs(365 - obj.y))
         let z = radians(obj.r)
@@ -104,6 +106,7 @@ class RunViewController: UIViewController {
         print("X: " + String(x))
         print("Y: " + String(y))
         print("Z: " + String(z))
+ */
         playSoundsController?.updateAngularOrientation(Float(obj.h), Float(obj.p), Float(obj.r))
         
         // Send OSC here
@@ -127,12 +130,15 @@ class RunViewController: UIViewController {
             labelArr = [coordinateLabel1, coordinateLabel2]
             print("labelArr count: \(labelArr.count)")
             print("pointArr count: \(pointArr.count)")
+            /*
             for i in 0..<labelArr.count {
                 print("text changed")
                 let point = pointArr[i]
                 labelArr[i].text = String("x:\(Int(point.x)),y:\(Int(point.y))")
             }
+            */
         }
+        print("test1")
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
@@ -176,17 +182,31 @@ class RunViewController: UIViewController {
     func loadSounds() {
         
         /* sounds
-         * 0.wav : AK47
-         * 1.wav : Explosion 2
-         * 2.wav : Explosion 1
-         * 3.wav : Grenade Launcher
-         * 4.wav : Helicopter 2
-         * 5.wav : Helicopter Flyby
+         1)* 0.wav : AK47
+         2)* 1.wav : Explosion 2
+         3)* 2.wav : Helicopter 2
+         4)* 3.wav : Sniper Rifle
+         5)* 4.wav : Tank
+         * 5.wav : Grenade Launcher
          * 6.wav : Machine Gun 3
          * 7.wav : Overall Battle ------ place at the origin in each scenario
          * 8.wav : Shotgun
-         * 9.wav : Sniper Rifle
-         * 10.wav : Tank
+         * 9.wav : Explosion 1
+         * 10.wav : Helicopter Flyby
+         * 11.wav : Advance
+         * 12.wav : Cease fire
+         * 13.wav : Cover fire
+         * 14.wav : disengage
+         * 15.wav : engage
+         * 16.wav : establish perimeter
+         * 17.wav : fall back
+         * 18.wav : fire at will
+         * 19.wav : hold position
+         * 20.wav : move out
+         * 21.wav : move up
+         * 22.wav : open fire
+         * 23.wav : stay put
+         * 24.wav : stop
          */
         
         //adds the sounds to the array and updates positions
@@ -210,6 +230,9 @@ class RunViewController: UIViewController {
             for i in 0..<pointArr.count {
                 let point = pointArr[i]
                 playSoundsController.updatePosition(index: i, position: AVAudio3DPoint(x: Float(point.x), y: Float(point.y), z: 0))
+                if (point.y > 50) {
+                    playSoundsController.updateVolume(index: i, volume: 0.0)
+                }
             }
             
             

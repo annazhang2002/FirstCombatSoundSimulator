@@ -518,7 +518,7 @@ typedef NS_OPTIONS(uint8_t, MBLRegisterState) {
             }];
         }
 #ifdef DEBUG
-        assert(self.initializeCount >= 0);
+      //  assert(self.initializeCount >= 0);
 #endif
         self.initializeCount = MAX(self.initializeCount, 0);
         return deinitializeTask;
@@ -558,7 +558,7 @@ typedef NS_OPTIONS(uint8_t, MBLRegisterState) {
             }];
         }
 #ifdef DEBUG
-        assert(self.activateCount >= 0);
+  //      assert(self.activateCount >= 0);
 #endif
         self.activateCount = MAX(self.activateCount, 0);
         return activateTask;

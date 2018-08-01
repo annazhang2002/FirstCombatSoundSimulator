@@ -19,7 +19,7 @@ class CustomViewController: UIViewController {
     var dragViewCenterX: Double = 0.0
     var dragViewCenterY: Double = 0.0
     let maxXPos: Double = 152.0 // max x or y position of image
-    var scale100: Double = 0.0 // constant to scale position to 100
+    var scale50: Double = 0.0 // constant to scale position to 100
     //...here
     
     var dragStartPositionRelativeToCenter : CGPoint? //x and y of image
@@ -28,6 +28,9 @@ class CustomViewController: UIViewController {
     
     @IBOutlet weak var imageView1: UIImageView!
     @IBOutlet weak var imageView2: UIImageView!
+    @IBOutlet weak var imageView3: UIImageView!
+    @IBOutlet weak var imageView4: UIImageView!
+    @IBOutlet weak var imageView5: UIImageView!
     @IBOutlet weak var graphView: UIImageView!
     
     var imageArr: [UIImageView] = [] //stores images
@@ -42,7 +45,7 @@ class CustomViewController: UIViewController {
             runViewController.device = self.device
             runViewController.scenario = self.scenario
             runViewController.pointArr = coordinateArr
-            runViewController.updateLabels()
+            //runViewController.updateLabels()
             print("image arrays connected")
         }
     }
@@ -50,13 +53,11 @@ class CustomViewController: UIViewController {
     func loadCoordinates(){
         coordinateArr = []
         for i in 0..<imageArr.count{
-            //changed to...
             var center: CGPoint = imageArr[i].center
-            center.x = CGFloat((Double(center.x) - dragViewCenterX) * scale100)
-            center.y = CGFloat((dragViewCenterY - Double(center.y)) * scale100)
+            center.x = CGFloat((Double(center.x) - dragViewCenterX) * scale50)
+            center.y = CGFloat((dragViewCenterY - Double(center.y)) * scale50)
             coordinateArr.append(center)
             print("x:\(Double(imageArr[i].center.x) - dragViewCenterX), y:\(imageArr[i].center.y)")
-            //...here
         }
     }
     
@@ -67,35 +68,31 @@ class CustomViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo")!)
         
         //changed
-        scale100 = 50.0 / maxXPos
-        
+        scale50 = 50.0 / maxXPos
         
         doneButton.setBackgroundImage(UIImage(named: "buttonimage"), for: UIControlState.normal)
         
         //changed to...
         //set center of graph to (0,0)
         dragViewCenterX = Double(dragView.frame.width / 2)
-        dragViewCenterY = Double(dragView.frame.height / 2)
+        dragViewCenterY = Double(dragView.frame.height / 2) + 30
         print("center of dragView - x:\(dragViewCenterX), y\(dragViewCenterY)")
         
-        //bring icons in front of graph
-        imageView1.layer.zPosition = 1
-        imageView2.layer.zPosition = 1
+        //bring graph to back layer
         graphView.layer.zPosition = 0
-        //...here
         
         //set background image
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo.jpg")!)
         
-        imageArr = [imageView1, imageView2]
+        imageArr = [imageView1, imageView2, imageView3, imageView4, imageView5]
         
-        //enable interactions for images
-        imageView1.isUserInteractionEnabled = true
-        imageView2.isUserInteractionEnabled = true
-        
-        //add gesture recognizer to imageView
-        imageView1.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(CustomViewController.handlePan)))
-        imageView2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(CustomViewController.handlePan)))
+        //enable interactions for images, add gesture recognizer to imageView
+        for image in imageArr {
+            image.layer.zPosition = 1 // bring images to front layer
+            image.isUserInteractionEnabled = true
+            image.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(CustomViewController.handlePan)))
+            print("enabled")
+        }
     }
     
     @objc func handlePan(gesture: UIGestureRecognizer!) {

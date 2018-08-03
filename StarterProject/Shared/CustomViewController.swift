@@ -42,8 +42,8 @@ class CustomViewController: UIViewController {
     @IBOutlet weak var label4: UILabel!
     @IBOutlet weak var label5: UILabel!
     @IBOutlet weak var backgroundLabel: UILabel!
-    @IBOutlet weak var tesLabel: UILabel!
-    @IBOutlet weak var testButton: UIButton!
+    //@IBOutlet weak var tesLabel: UILabel!
+    //@IBOutlet weak var testButton: UIButton!
     
     var labelArr: [UILabel] = []
     var imageArr: [UIImageView] = [] //stores images
@@ -73,10 +73,11 @@ class CustomViewController: UIViewController {
             //print("x:\(Double(center.x) - dragViewCenterX), y:\(center.y)")
         }
     }
-    
+    /*
     @IBAction func displayPoint(_ sender: UIButton) {
         tesLabel.text = String("\(imageView1.center.y)")
     }
+ */
     override func viewDidLoad() {
         super.viewDidLoad()
         

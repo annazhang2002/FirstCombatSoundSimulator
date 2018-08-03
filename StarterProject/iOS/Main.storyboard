@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="scrollIndicatorInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="F4W-oh-xSW">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="F4W-oh-xSW">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -458,21 +458,6 @@ Scenario</string>
                                             <constraint firstAttribute="width" secondItem="F5J-Ls-PhG" secondAttribute="height" multiplier="1:1" id="18n-8H-C0P"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XT-5R-K7k">
-                                        <rect key="frame" x="186" y="319" width="104" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpa-nY-qM7">
-                                        <rect key="frame" x="182" y="226" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="displayPoint:" destination="PsE-Kk-gdF" eventType="touchUpInside" id="cpT-OW-Jjh"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -547,8 +532,6 @@ Scenario</string>
                         <outlet property="label3" destination="Avs-Nw-9dI" id="Kx6-xq-L2P"/>
                         <outlet property="label4" destination="sBp-rI-zKa" id="ucc-Jx-ssM"/>
                         <outlet property="label5" destination="JwK-5h-npS" id="Y9z-kO-vtU"/>
-                        <outlet property="tesLabel" destination="0XT-5R-K7k" id="jYt-IJ-kka"/>
-                        <outlet property="testButton" destination="fpa-nY-qM7" id="hx8-2h-aWK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqe-Gp-UYv" userLabel="First Responder" sceneMemberID="firstResponder"/>

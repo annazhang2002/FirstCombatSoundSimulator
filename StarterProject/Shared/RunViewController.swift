@@ -245,18 +245,23 @@ class RunViewController: UIViewController {
             playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: -20, z: 10))
             playSoundsController.updatePosition(index: 6, position: AVAudio3DPoint(x: -50, y: 40, z: 0))
             playSoundsController.updatePosition(index: 9, position: AVAudio3DPoint(x: -25, y: 25, z: -10))
+            playSoundsController.updatePosition(index: 7, position: AVAudio3DPoint(x: 0, y: 1, z: 0))
+            playSoundsController.updateVolume(index: 7, volume: 0.1)
         case 2:
             playSoundsController.updatePosition(index: 3, position: AVAudio3DPoint(x: 50, y: 30, z: 10))
             playSoundsController.updatePosition(index: 5, position: AVAudio3DPoint(x: -25, y: 25, z: 20))
             playSoundsController.updatePosition(index: 8, position: AVAudio3DPoint(x: -50, y: 25, z: -15))
-            
+            //playSoundsController.updatePosition(index: 7, position: AVAudio3DPoint(x: 0, y: 1, z: 0))
+            //playSoundsController.updateVolume(index: 7, volume: 0.1)
+
         case 0:
             for i in 0..<pointArr.count {
                 let point = pointArr[i]
-                playSoundsController.updatePosition(index: i, position: AVAudio3DPoint(x: Float(point.x), y: Float(point.y), z: 0))
+                playSoundsController.updatePosition(index: i, position: AVAudio3DPoint(x: Float(-point.x), y: Float(point.y), z: 0))
                 if (point.y > 50) {
                     playSoundsController.updateVolume(index: i, volume: 0.0)
                 }
+                playSoundsController.updateVolume(index: 7, volume: 0.0)
             }
             
             

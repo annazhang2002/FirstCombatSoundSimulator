@@ -12,12 +12,15 @@ import AVFoundation
 
 class DeviceViewController: UIViewController {
     
+    @IBOutlet weak var beginButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     var device: MBLMetaWear!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let optionsViewController = segue.destination as?
             OptionsViewController {
-            print("Preparing for OptionsViewController")
+            //print("Preparing for OptionsViewController")
             optionsViewController.device = self.device
         }
     }
@@ -26,7 +29,19 @@ class DeviceViewController: UIViewController {
         super.viewDidLoad()
         
         //set background image
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo")!)
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "star.jpg")!)
+        
+        self.view.backgroundColor = UIColor.white
+        let screenSize: CGRect = UIScreen.main.bounds
+        let bgImage = UIImageView(image: UIImage(named: "star.jpg"))
+        bgImage.center = CGPoint(x: self.view.bounds.size.width / 2,y: self.view.bounds.size.height / 2)
+        bgImage.transform = CGAffineTransform(scaleX: screenSize.width / 768, y: screenSize.height / 1024)
+        self.view.addSubview(bgImage)
+        bgImage.layer.zPosition = 0
+        
+        titleLabel.layer.zPosition = 1
+        beginButton.layer.zPosition = 1
+        beginButton.layer.cornerRadius = 10
         
     }
     
@@ -36,7 +51,7 @@ class DeviceViewController: UIViewController {
         device.addObserver(self, forKeyPath: "state", options: NSKeyValueObservingOptions.new, context: nil)
         device.connectAsync().success { _ in
             self.device.led?.flashColorAsync(UIColor.green, withIntensity: 1.0, numberOfFlashes: 3)
-            NSLog("We are connected")
+            //NSLog("We are connected")
         }
     }
     

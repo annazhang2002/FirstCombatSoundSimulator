@@ -49,8 +49,8 @@ class PlaySoundsController {
             fileExtensionCount = index.count - 3
             fileExtension = (fileExtension.padding(toLength: 3, withPad: index, startingAt: fileExtensionCount))
             fileName = (fileName.padding(toLength: (fileExtensionCount-1), withPad: index, startingAt: 0))
-            print(fileName)
-            print(fileExtension)
+            //print(fileName)
+            //print(fileExtension)
             guard let filePath = Bundle.main.url(forResource: fileName, withExtension: fileExtension)
                 
                 else {
@@ -70,13 +70,13 @@ class PlaySoundsController {
             
             do {
                 try audioFile.read(into: buffer)
-                print("File loaded")
-                print(buffer.frameLength)
+                //print("File loaded")
+                //print(buffer.frameLength)
             }
             catch{
                 print("Could not load file into buffer")
             }
-            print("There are \(counter + 1) sounds")
+            //print("There are \(counter + 1) sounds")
             engine.attach(player[counter])
             engine.connect(player[counter], to: mixer3d, format: audioFile.processingFormat)
             mixer.renderingAlgorithm = .sphericalHead
@@ -85,7 +85,7 @@ class PlaySoundsController {
             counter += 1
             
         }
-        print("Players Ok")
+        //print("Players Ok")
         initEngine()
     }
     

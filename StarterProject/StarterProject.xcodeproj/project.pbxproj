@@ -27,6 +27,9 @@
 		402973791DB8260000EC8C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402973751DB8260000EC8C32 /* Main.storyboard */; };
 		A74CC4E904D4261827DB3639 /* Pods_Starter_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CC4717E50B1C51696459B4 /* Pods_Starter_macOS.framework */; };
 		BC31A9FBED54BD932058B42E /* Pods_Starter_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B810285FECA2430C1FAEF3F /* Pods_Starter_tvOS.framework */; };
+		C5321B39211375410017E4FC /* camo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5321B38211375410017E4FC /* camo2.jpg */; };
+		C5321B3B211378FF0017E4FC /* camo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5321B3A211378FE0017E4FC /* camo3.jpg */; };
+		C5321B3D211387FB0017E4FC /* star.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5321B3C211387FA0017E4FC /* star.jpg */; };
 		C54EDB9E211136660037BF88 /* helicopterImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C54EDB9A211136640037BF88 /* helicopterImage.png */; };
 		C54EDB9F211136660037BF88 /* tankImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C54EDB9B211136650037BF88 /* tankImage.png */; };
 		C54EDBA0211136660037BF88 /* explosionImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C54EDB9C211136650037BF88 /* explosionImage.png */; };
@@ -92,6 +95,9 @@
 		4B810285FECA2430C1FAEF3F /* Pods_Starter_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starter_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5831B849867AF94CA117AB75 /* Pods-Starter-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Starter-macOS/Pods-Starter-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		BC9E019C266AD9823B5E877D /* Pods-Starter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Starter-tvOS/Pods-Starter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C5321B38211375410017E4FC /* camo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camo2.jpg; sourceTree = "<group>"; };
+		C5321B3A211378FE0017E4FC /* camo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camo3.jpg; sourceTree = "<group>"; };
+		C5321B3C211387FA0017E4FC /* star.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star.jpg; sourceTree = "<group>"; };
 		C54EDB9A211136640037BF88 /* helicopterImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helicopterImage.png; sourceTree = "<group>"; };
 		C54EDB9B211136650037BF88 /* tankImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tankImage.png; sourceTree = "<group>"; };
 		C54EDB9C211136650037BF88 /* explosionImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosionImage.png; sourceTree = "<group>"; };
@@ -167,6 +173,9 @@
 		3F0F642A2110FC8300345560 /* ProjectImages */ = {
 			isa = PBXGroup;
 			children = (
+				C5321B3C211387FA0017E4FC /* star.jpg */,
+				C5321B3A211378FE0017E4FC /* camo3.jpg */,
+				C5321B38211375410017E4FC /* camo2.jpg */,
 				C54EDBA4211145E70037BF88 /* ak47image.png */,
 				C54EDB9C211136650037BF88 /* explosionImage.png */,
 				C54EDB9A211136640037BF88 /* helicopterImage.png */,
@@ -418,6 +427,7 @@
 				C54EDBB9211215020037BF88 /* 18.wav in Resources */,
 				C54EDBBF211215020037BF88 /* 20.wav in Resources */,
 				C5D0D383211017F500CE19EB /* 7.wav in Resources */,
+				C5321B3D211387FB0017E4FC /* star.jpg in Resources */,
 				402973791DB8260000EC8C32 /* Main.storyboard in Resources */,
 				C54EDBB5211215020037BF88 /* 23.wav in Resources */,
 				C5D0D388211017F500CE19EB /* 2.wav in Resources */,
@@ -443,8 +453,10 @@
 				C54EDBBA211215020037BF88 /* 12.wav in Resources */,
 				C54EDBBB211215020037BF88 /* 11.wav in Resources */,
 				402973601DB81F5B00EC8C32 /* Assets.xcassets in Resources */,
+				C5321B3B211378FF0017E4FC /* camo3.jpg in Resources */,
 				3F0F642C2110FCB700345560 /* 100x100 graph.png in Resources */,
 				C5D0D37D211017F500CE19EB /* 3.wav in Resources */,
+				C5321B39211375410017E4FC /* camo2.jpg in Resources */,
 				C54EDBC0211215020037BF88 /* 14.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,10 @@ class RunViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
     
+    var timer = Timer()
+    var seconds = 15
+    
+    @IBOutlet weak var instructLabel: UILabel!
     var scenario: Int = 0
     var soundArray : [String] = []
     
@@ -22,7 +26,7 @@ class RunViewController: UIViewController {
     var pointArr: [CGPoint] = []
     
     @IBOutlet weak var stopButton: UIButton!
-    
+    /*
     @IBOutlet weak var coordinateLabel1: UILabel!
     @IBOutlet weak var coordinateLabel2: UILabel!
     
@@ -35,6 +39,8 @@ class RunViewController: UIViewController {
             labelArr[i].text = String("x:\(point.x),y:\(point.y)")
         }
     }
+    */
+    
     
     func sendScenario(scene: Int) {
         self.scenario = scene
@@ -55,7 +61,7 @@ class RunViewController: UIViewController {
          device.addObserver(self, forKeyPath: "state", options: NSKeyValueObservingOptions.new, context: nil)
          device.connectAsync().success { _ in
             self.device.led?.flashColorAsync(UIColor.green, withIntensity: 1.0, numberOfFlashes: 3)
-            NSLog("We are connected")
+            //NSLog("We are connected")
          }
         loadSounds()
     }
@@ -121,16 +127,32 @@ class RunViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         //set background image
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo")!)
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "camo3.jpg")!)
+        
+        self.view.backgroundColor = UIColor.white
+        let screenSize: CGRect = UIScreen.main.bounds
+        let bgImage = UIImageView(image: UIImage(named: "star.jpg"))
+        bgImage.center = CGPoint(x: self.view.bounds.size.width / 2,y: self.view.bounds.size.height / 2)
+        bgImage.transform = CGAffineTransform(scaleX: screenSize.width / 768, y: screenSize.height / 1024)
+        self.view.addSubview(bgImage)
+        bgImage.layer.zPosition = 0
+        
+        stopButton.layer.zPosition = 1
+        startButton.layer.zPosition = 1
+        instructLabel.layer.zPosition = 1
+        deviceStatus.layer.zPosition = 1
+        
+        startButton.layer.cornerRadius = 20
+        stopButton.layer.cornerRadius = 20
         
         if scenario == 0{
+            /*
             labelArr = [coordinateLabel1, coordinateLabel2]
             print("labelArr count: \(labelArr.count)")
             print("pointArr count: \(pointArr.count)")
-            /*
+            
             for i in 0..<labelArr.count {
                 print("text changed")
                 let point = pointArr[i]
@@ -138,7 +160,6 @@ class RunViewController: UIViewController {
             }
             */
         }
-        print("test1")
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
@@ -221,10 +242,13 @@ class RunViewController: UIViewController {
         //updates the position of the sound based on the scenario
         switch (scenario){
         case 1:
-            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 100, y: 100, z: 0))
-            
+            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: -20, z: 10))
+            playSoundsController.updatePosition(index: 6, position: AVAudio3DPoint(x: -50, y: 40, z: 0))
+            playSoundsController.updatePosition(index: 9, position: AVAudio3DPoint(x: -25, y: 25, z: -10))
         case 2:
-            playSoundsController.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 50))
+            playSoundsController.updatePosition(index: 3, position: AVAudio3DPoint(x: 50, y: 30, z: 10))
+            playSoundsController.updatePosition(index: 5, position: AVAudio3DPoint(x: -25, y: 25, z: 20))
+            playSoundsController.updatePosition(index: 8, position: AVAudio3DPoint(x: -50, y: 25, z: -15))
             
         case 0:
             for i in 0..<pointArr.count {
@@ -239,7 +263,7 @@ class RunViewController: UIViewController {
         default:
             print("Scenario not found")
         }
-        print("sound positions updated")
+        //print("sound positions updated")
         
         
         //has the overall battle sound always play quietly in each scenario

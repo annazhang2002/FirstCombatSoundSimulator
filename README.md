@@ -20,6 +20,9 @@ In our research, we learned that when new military recruits join the army they m
 
 ## App Features
 Below is the storyboard for our app, that briefly demonstrates the app flow. 
+
+![Storyboard](storyboard-fcss.png)
+
 - Connecting to MBientLab MetaWearC Sensors
     - This is the first step upon opening the app (there is more information below on how to connect and use these sensors). Once the sensors are connected the opening page of our app is launched
 - Scenario Options

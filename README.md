@@ -16,6 +16,8 @@ In our research, we learned that when new military recruits join the army they m
 
 ## Our Research Poster
 
+![Our Research Poster](posterslide-fcss.jpg)
+
 ## App Features
 Below is the storyboard for our app, that briefly demonstrates the app flow. 
 - Connecting to MBientLab MetaWearC Sensors

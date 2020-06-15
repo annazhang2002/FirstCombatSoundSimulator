@@ -1,3 +1,37 @@
+First Combat Sound Simulator
+============================
+
+## App Description
+
+The First Combat Sound Simulator is an iOS app designed to help military recruits in the training process. The app creates a 3D virtual sound environment that allows the user to hear a variety of sounds coming from different positions and angles. What makes the app more than just a culmination of loud artillery sounds is the use of MetaWear sensors to tracks the user's head position. With this information, we adjusted the sound in the headphones accordingly with the AVFoundation software to make it seem as though the sounds are still in the same position regardless of head position. 
+
+The goal of the First-Combat Sound Simulator is to provide a realistic audio combat environment using 3D sound technology. The application uses spatial audio playback to improve a soldier’s effectiveness during their first combat experience, while saving ammo during training. 
+
+
+## Background Information
+
+We are a team of four students who developed and researched this project through [COSMOS at UCI](https://cosmos.uci.edu/). Through this program we learned about iOS app development as well as how to program sound spatialization for virtual reality. 
+
+In our research, we learned that when new military recruits join the army they must go through intensive training, and a significant aspect of that training is working to get accustomed to the loud noises they may encounter on the battlefield. Typically, this is done by firing ammunition during training circuits to prevent the recruits from getting startled by these noises in an actual battle. However, this tactic is very wasteful and non-resourceful, so we create the app to simulate the same circumstances virtually. 
+
+## Our Research Poster
+
+## App Features
+Below is the storyboard for our app, that briefly demonstrates the app flow. 
+- Connecting to MBientLab MetaWearC Sensors
+    - This is the first step upon opening the app (there is more information below on how to connect and use these sensors). Once the sensors are connected the opening page of our app is launched
+- Scenario Options
+    - At this point, the user has the opportunity to choose which scenario they want. There are two pre-loaded scenario that include various sounds (like grenades, snipers, and helicopter etc) in varying locations. 
+- Custom Scenario Option
+    - The user is also able to create their own scenario with the drag and drop screen. Here there are several images of sounds at the top, and the user can drag them onto a grid to indicate where the sound will come from. 
+- Sound Movement based on head position
+    - As previously described, one of the most important aspects of our app is the fact that the sounds will stay in the same position regardless of head movement. For instance, let's say the user is facing north and hears a sniper sound from his left (or from the west). Then, if the user turns around to face south, the sound will adjust so that it is now on his right and thus is still in the west. This allows the sounds to really place the user in a location and imagine that the sound is actually happening around them not just playing in their headphones. 
+
+
+
+
+
+
 # MetaWear SDK for iOS/OS X/tvOS by MBIENTLAB
 
 [![Platforms](https://img.shields.io/cocoapods/p/MetaWear.svg?style=flat)](http://cocoapods.org/pods/MetaWear)
